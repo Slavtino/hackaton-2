@@ -51,3 +51,25 @@ public class Contacto {
         if (!(obj instanceof Contacto)) {
             return false;
         }
+        Contacto contacto = (Contacto) obj;
+
+        return nombre.equalsIgnoreCase(contacto.nombre)
+                && apellido.equalsIgnoreCase(contacto.apellido);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+                nombre.toLowerCase(),
+                apellido.toLowerCase()
+        );
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre +
+                " " + apellido +
+                " | Telefono: " + telefono;
+    }
+}
+
