@@ -55,8 +55,7 @@ public class Agenda {
     */
     public boolean existeContacto(Contacto c) {
         for (int i = 0; i < contactos.length; i++) {
-            // Se valida que la posición no sea nula antes de llamar al método .equals()
-            // para evitar un error de tipo NullPointerException
+
             if (contactos[i] != null && contactos[i].equals(c)) {
                 return true;
             }
@@ -67,7 +66,7 @@ public class Agenda {
     /**
      * Registra un nuevo contacto en el primer espacio disponible.
      * Valida previamente que haya espacio y que el contacto no sea un duplicado.
-     * @param c El contacto que se desea agregar.
+
      */
     public void anadirContacto(Contacto c) {
         // Primera barrera: Validar capacidad
@@ -131,9 +130,8 @@ public class Agenda {
     }
 
     /**
-     * Elimina un contacto de la agenda vaciando su lugar en el arreglo.
-     * @param c El contacto exacto que se desea borrar.
-     */
+     * Elimina un contacto de la agenda vaciando su lugar en el arreglo. */
+
     public void eliminarContacto(Contacto c) {
         for (int i = 0; i < contactos.length; i++) {
             if (contactos[i] != null && contactos[i].equals(c)) {
