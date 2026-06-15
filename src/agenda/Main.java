@@ -71,4 +71,33 @@ public class Main {
                             )
                     );
                     break;
+            // Lista de contactos
+                case 4:
+                    agenda.listarContactos();
+                    break;
+            // Espacios libres en la agenda
+                case 5:
+                    System.out.println("Espacios libres: " + agenda.espaciosLibres());
+                    break;
+            // Verificacion de los lugares de la agenda
+                case 6:
+                    if (agenda.agendaLlena()) {
+                        System.out.println("La agenda esta llena.");
+                    } else {
+                        System.out.println("La agenda tiene espacio.");
+                    }
+                    break;
+            //Salir del programa
+                case 7:
+                    System.out.println("Programa finalizado.");
+                    break;
+            //Opciones invalidad
+                default:
+                    System.out.println("Opcion invalida.");
+            }
+
+        } while (opcion != 7);
+        sc.close();
+    }
+}
 
