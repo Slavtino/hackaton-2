@@ -26,11 +26,9 @@ INTEGRANTES:
 
 Andriy Pogrebnyak
 
-Brayan Axel Pallares
+Brayan Axel Pallares Morales
 
-Morales
-
-Adriana Careo (Adri)
+Adriana Careo
 
 Enrique Perez Sanchez
 
