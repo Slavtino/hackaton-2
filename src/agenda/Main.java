@@ -6,7 +6,7 @@ public class Main {
 //Declaramos el scanner
         Scanner sc = new Scanner(System.in);
         //Pedimos al usuario el tamaño de la agenda
-        System.out.print("Ingrese el tamaño de la agenda (0 = por defecto): ");
+        System.out.print("Ingrese el tamaño de la agenda (10 = por defecto): ");
         int tamano = sc.nextInt();
         sc.nextLine();
         Agenda agenda;
