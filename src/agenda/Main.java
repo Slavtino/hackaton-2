@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+//Declaramos el scanner
         Scanner sc = new Scanner(System.in);
+        //Pedimos al usuario el tamaño de la agenda
         System.out.print("Ingrese el tamaño de la agenda (0 = por defecto): ");
         int tamano = sc.nextInt();
         sc.nextLine();
@@ -17,7 +18,7 @@ public class Main {
 
         int opcion;
 
-
+ //Se creo el menú de inicio
         do {
             System.out.println("\n--- AGENDA ---");
             System.out.println("1. Agregar contacto");
@@ -30,7 +31,7 @@ public class Main {
             System.out.print("Opcion: ");
             opcion = sc.nextInt();
             sc.nextLine();
-
+//Pedir datos de contacto
             switch (opcion) {
                 case 1:
                     System.out.print("Nombre: ");
@@ -47,7 +48,7 @@ public class Main {
                             )
                     );
                     break;
-                case 2:
+                case 2: //Buscar usuario
                     System.out.print("Nombre: ");
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
@@ -57,7 +58,7 @@ public class Main {
                             apellido
                     );
                     break;
-                case 3:
+                case 3: //Borrar usuario
                     System.out.print("Nombre: ");
                     nombre = sc.nextLine();
                     System.out.print("Apellido: ");
